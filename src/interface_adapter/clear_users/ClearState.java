@@ -2,11 +2,13 @@ package interface_adapter.clear_users;
 
 // TODO Complete me
 
+import use_case.clear_users.ClearOutputData;
+
 import java.util.ArrayList;
 
 public class ClearState {
     private ArrayList<String> usersDeleted;
-    public ClearState(interface_adapter.clear_users.ClearState copy) {
+    public ClearState(ClearState copy) {
         usersDeleted = copy.usersDeleted;
     }
 
@@ -18,7 +20,7 @@ public class ClearState {
         return usersDeleted;
     }
 
-    public void setUsername(ArrayList<String> usersDeleted) {
+    public void setUsersDeleted(ArrayList<String> usersDeleted) {
         this.usersDeleted = usersDeleted;
     }
 

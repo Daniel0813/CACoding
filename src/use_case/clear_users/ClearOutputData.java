@@ -9,4 +9,7 @@ public class ClearOutputData {
     public ClearOutputData(ArrayList<String> usersDeleted) {
         this.usersDeleted = usersDeleted;
     }
+    public ArrayList<String> getUsersDeleted() {
+        return usersDeleted;
+    }
 }
