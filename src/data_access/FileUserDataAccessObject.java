@@ -101,10 +101,11 @@ public class FileUserDataAccessObject implements ClearUserDataAccessInterface, S
     @Override
     public ArrayList<String> clear() {
         ArrayList<String> output = new ArrayList<>();
-        for (Map.Entry<String, User> entry : accounts.entrySet()){
-            output.add(entry.getValue().getName());
+        for (String username: accounts.keySet()){
+            output.add(username);
         }
         accounts.clear();
+        this.save();
         return output;
     }
 }

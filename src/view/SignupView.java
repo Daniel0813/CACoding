@@ -94,7 +94,7 @@ public class SignupView extends JPanel implements ActionListener, PropertyChange
                             clearController.execute();
                             ClearState currentState = clearViewModel.getState();
                             ArrayList<String> usersDeleted = currentState.getUsersDeleted();
-                            System.out.println(usersDeleted);
+
                             String message = "";
                             for (String s: usersDeleted){
                                 message += s;
